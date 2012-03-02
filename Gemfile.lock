@@ -24,7 +24,7 @@ GEM
     rspec-mocks (2.8.0)
     typhoeus (0.3.3)
       mime-types
-    vcr (2.0.0.rc2)
+    vcr (2.0.0)
 
 PLATFORMS
   ruby
@@ -33,4 +33,4 @@ DEPENDENCIES
   autotest
   geo_ips!
   rspec (~> 2.8.0)
-  vcr (= 2.0.0rc2)
+  vcr (~> 2.0.0)
