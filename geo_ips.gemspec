@@ -13,7 +13,12 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "geo_ips"
   gem.require_paths = ["lib"]
-  gem.version       = GeoIps::VERSION
+  gem.version       = GeoIPs::VERSION
+  
+  gem.add_runtime_dependency("typhoeus", "~> 0.3.3")
+  gem.add_runtime_dependency("multi_json")
   
   gem.add_development_dependency("rspec", "~> 2.8.0")
+  gem.add_development_dependency("autotest")
+  gem.add_development_dependency("vcr", "2.0.0rc2")
 end
