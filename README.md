@@ -1,6 +1,9 @@
 # GeoIPs
 
-Ruby library to interact with the [GeoIPS.com](http://www.geoips.com/developer) IP geolocation API.
+Ruby library to interact with the [GeoIPS.com](http://www.geoips.com/developer) IP geo-location API. 
+
+### Note
+I have no association with the company running this service. All support questions not related to the library itself should be forwarded to them.
 
 ## Installation
 
