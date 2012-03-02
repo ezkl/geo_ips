@@ -39,6 +39,9 @@ Or install it yourself as:
     #     "latitude" : "40.3402", 
     #     "longitude" : "-111.6073" }
 
+## Testing
+To test the library, you'll need to [signup for an API key](http://www.geoips.com/auth/register) and place the key in a file called `.api_key` in the root directory of the library.
+
 ## Contributing
 
 1. Fork it
