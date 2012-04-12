@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in geo_ips.gemspec
 gemspec
+
+group :development, :test do
+  gem 'ZenTest', '~> 4.7.0'
+  gem 'fivemat'
+end
