@@ -1,9 +1,10 @@
 require 'typhoeus'
 require 'multi_json'
 
-require 'geo_ips/version'
-
 class GeoIPs
+  
+  BASE_URI = 'http://api.geoips.com'
+    
   attr_writer :api_key
   
   def initialize api_key
@@ -16,7 +17,7 @@ class GeoIPs
   
   private
   def request ip
-    response = Typhoeus::Request.get("http://api.geoips.com/ip/#{ip}/key/#{@api_key}/output/json")
+    response = Typhoeus::Request.get("#{BASE_URI}/ip/#{ip}/key/#{@api_key}/output/json")
     
     if response.success?
       parse(response.body)
@@ -33,3 +34,5 @@ class GeoIPs
     response_string.gsub(/,\n}$/,"\n}")
   end
 end
+
+require 'geo_ips/version'
