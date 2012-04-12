@@ -16,3 +16,4 @@ test/version_tmp
 tmp
 .api_key
 spec/cassettes
+Gemfile.lock
