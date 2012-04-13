@@ -5,4 +5,5 @@ gemspec
 group :development, :test do
   gem 'ZenTest', '~> 4.7.0'
   gem 'fivemat'
+  gem 'rake'
 end
