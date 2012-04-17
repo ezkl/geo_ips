@@ -27,11 +27,7 @@ class GeoIPs
   end
   
   def parse response
-    MultiJson.decode(fix_response(response))
-  end
-  
-  def fix_response response_string
-    response_string.gsub(/,\n}$/,"\n}")
+    MultiJson.decode(response)
   end
 end
 
